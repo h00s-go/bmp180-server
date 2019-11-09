@@ -40,6 +40,6 @@ func (b *BMP180) start() {
 		if err == nil {
 			b.Pressure = float64(pressure)
 		}
-		time.Sleep(1 * time.Second)
+		time.Sleep(60 * time.Second)
 	}
 }
